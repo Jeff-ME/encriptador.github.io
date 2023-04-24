@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-es">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="encriptador.css">
+</head>
+<body>
+
+  <main class="main">
+    <section class="section_main">
+        <div class="btn-input_main">
+            <div class="input_main">
+                <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="alert_main">
+                <span>Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="buttons_main">
+                <button class="btn_encrypt" value="encriptar" id="btn-encriptar">Encriptar</button>
+                <button class="btn_decrypt" value="desencriptar" id="btn-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="aside_container" id="aside_container">
+
+      <div class="text_container">        
+        <textarea class="text-input-salida" placeholder="Su texto se genera aquí"></textarea>
+      </div>
+      <div class="copy_container" id="copy_container">
+          <button class="btn-copy" onclick="copyToClipboard()" id="btn-copy">Copiar</button>
+      </div>
+  </section>
+  </main>
+  <script src="encriptador.JS"></script>
+</body>
+</html>
